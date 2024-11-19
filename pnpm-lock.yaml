@@ -45,6 +45,22 @@ importers:
 
   config/typescript-config: {}
 
+  packages/auth:
+    dependencies:
+      '@casl/ability':
+        specifier: ^6.7.1
+        version: 6.7.2
+    devDependencies:
+      '@saas/eslint-config':
+        specifier: workspace:*
+        version: link:../../config/eslint-config
+      '@saas/prettier':
+        specifier: workspace:*
+        version: link:../../config/prettier
+      '@saas/tsconfig':
+        specifier: workspace:*
+        version: link:../../config/typescript-config
+
 packages:
 
   '@casl/ability@6.7.2':
