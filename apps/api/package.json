@@ -1,0 +1,26 @@
+{
+	"name": "@saas/api",
+	"version": "1.0.0",
+	"scripts": {
+		"dev": "tsx watch src/index.ts"
+	},
+	"dependencies": {
+		"@saas/auth": "workspace:*"
+	},
+	"devDependencies": {
+		"@saas/eslint-config": "workspace:*",
+		"@saas/prettier": "workspace:*",
+		"@saas/tsconfig": "workspace:*",
+		"ts-node": "^10.9.2",
+		"tsx": "^4.19.1"
+	},
+	"prisma": {
+		"seed": "tsx prisma/seed.ts"
+	},
+	"prettier": "@saas/prettier-config",
+	"eslintConfig": {
+		"extends": [
+			"@saas/eslint-config/node"
+		]
+	}
+}
